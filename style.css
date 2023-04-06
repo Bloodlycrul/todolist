@@ -12,13 +12,13 @@ body{
 
 .container-todo-show{
     width: 900px;
-    height: 600px;
     background-color: white;
     margin: auto;
     margin-top: 6%;
     border-radius : 16px;
     box-shadow: 5px 10px 10px #888888c8;
     text-align: center;
+    padding-bottom: 20px ;
 }
 
 .todo-heading{
@@ -29,7 +29,7 @@ body{
 
 
 .displaynone{
-    display: none;
+    display: none!important;
 }
 
 .img{
@@ -90,4 +90,26 @@ body{
     font-size: 16px;
     margin-right: 10px;
     cursor: pointer;
+}
+
+/* task list */
+
+.task-list{
+    text-align: start;
+    padding: 20px;
+    margin: 20px;
+    border: 0.5px solid black;
+    border-radius: 16px;
+    display: flex;
+
+}
+
+.check-box{
+
+    margin: 30px;
+}
+
+.backcolor-line{
+    background-color: orange;
+    text-decoration-line: line-through;
 }
