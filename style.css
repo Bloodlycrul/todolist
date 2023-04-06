@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.container-todo-show{
+    width: 900px;
+    height: 600px;
+    background-color: white;
+    margin: auto;
+    margin-top: 6%;
+    border-radius : 16px;
+    box-shadow: 5px 10px 10px #888888c8;
+    text-align: center;
+}
+
+.todo-heading{
+    text-align: start;
+    padding: 10px 10px;
+    font-weight: 400;
+}
+
+
+.displaynone{
+    display: none;
+}
+
+.img{
+    display: flex;
+    margin: auto;
+    width: 400px;
+}
+
+.heading{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.para{
+    font-size: 22px;
+    font-weight: 200;
+}
+
+
+/* Task section has been start here */
+
+.task-section{
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 0px;
+    background-color: white;
+    width: 900px;
+    border-radius : 16px;
+    box-shadow: 5px 10px 10px #888888c8;
+}
+
+.task-enter{
+    border: none;
+    padding: 20px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+}
+
+.date-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-time{
+    padding: 10px;
+    border-radius: 16px;
+    margin-left: 20px;
+}
+
+.btn{
+    background-color: rgb(149, 0, 255);
+    border: none;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 16px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
