@@ -8,6 +8,8 @@ const dateTime = document.getElementById('date-time')
 const button = document.getElementById('btn')
 const taskShow = document.getElementById('task-list-show')
 
+const success = new Audio("success-1-6297.mp3")
+const error = new Audio('error-2-126514.mp3')
 button.addEventListener('click', ()=>{
     // Removing the image and heading title to the first Container
     image.classList.add('displaynone')
@@ -19,7 +21,9 @@ button.addEventListener('click', ()=>{
     let headingTask = document.createElement('div')
     let taskBody = document.createElement('p')
     let taskName = document.createElement('p')
+    taskName.setAttribute('contentEditable', true)
     let taskDate = document.createElement('p')
+    taskDate.insertAdjacentHTML
     let checkBox = document.createElement('input')
 let taskEl = document.createElement('div');
 
@@ -38,13 +42,16 @@ let taskEl = document.createElement('div');
     taskName.textContent = taskHeading.value;
     taskBody.textContent = taskDescription.value;
     taskDate.textContent = dateTime.value
+    
 
 
     checkBox.addEventListener('click', ()=>{
         if(checkBox.checked === true){
             taskEl.classList.add('backcolor-line')
+                success.play();
         }else if(!checkBox.checked === true){
             taskEl.classList.remove('backcolor-line')
+            error.play();
         }
     
     })
